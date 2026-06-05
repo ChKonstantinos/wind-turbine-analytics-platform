@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment Variables
+.env
+
+# Large datasets
+data/
+datasets/
+
+# Spark temporary files
+spark-warehouse/
+metastore_db/
+
+# Databricks exports (optional)
+*.dbc.bak
+
+# Model artifacts
+models/
+outputs/models/
+
+# Temporary outputs
+tmp/
+temp/
