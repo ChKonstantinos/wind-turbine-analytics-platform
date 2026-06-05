@@ -50,6 +50,8 @@ Recommendation Engine
 Executive Dashboard Layer
         ↓
 Predictive Maintenance Scoring
+        ↓
+Streamlit Analytics Application
 ```
 
 ---
@@ -81,6 +83,12 @@ Predictive Maintenance Scoring
 - Performance Monitoring
 - Recommendation Engine
 - Predictive Maintenance Scoring
+
+### Application Layer
+
+- Streamlit
+- Plotly
+- Databricks SQL Connector
 
 ---
 
@@ -251,6 +259,46 @@ default.dashboard_maintenance_priority
 
 ---
 
+## Streamlit Application
+
+A user-facing analytics application was developed using Streamlit.
+
+The application connects directly to Databricks SQL Warehouse and provides an interactive interface for operational and maintenance teams.
+
+### Key Features
+
+- Executive KPI Dashboard
+- Monthly Performance Monitoring
+- Risk Analysis
+- Maintenance Prioritization
+- Health Monitoring
+- CSV Report Export
+- Databricks Live Connection
+
+### Application Architecture
+
+```text
+Databricks SQL Warehouse
+        ↓
+Python SQL Connector
+        ↓
+Streamlit Application
+        ↓
+Business Users
+```
+
+### Dashboard Pages
+
+- Executive Overview
+- Performance Analysis
+- Risk Analysis
+- Maintenance Center
+- Health Monitoring
+
+The application transforms analytical outputs into a business-friendly interface that supports operational decision-making.
+
+---
+
 ## Predictive Maintenance Scoring
 
 A health scoring framework was developed to prioritize maintenance activities.
@@ -310,6 +358,10 @@ The solution enables:
 wind-turbine-analytics-platform/
 │
 ├── notebooks/
+├── app/
+│   ├── app.py
+│   └── databricks_connection.py
+│
 ├── assets/
 ├── README.md
 ├── requirements.txt
@@ -328,6 +380,30 @@ Potential extensions:
 - Databricks Workflows
 - Automated retraining pipelines
 - Predictive maintenance models based on sensor anomalies
+
+---
+
+## End-to-End Analytics Workflow
+
+This project demonstrates a complete analytics lifecycle:
+
+```text
+Data Engineering
+        ↓
+Analytics Engineering
+        ↓
+Machine Learning
+        ↓
+Business Recommendations
+        ↓
+Dashboard Layer
+        ↓
+Application Layer
+        ↓
+Operational Decision Support
+```
+
+The solution simulates how industrial analytics platforms are developed and deployed in production environments.
 
 ---
 
