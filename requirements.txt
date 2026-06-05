@@ -5,3 +5,7 @@ matplotlib
 seaborn
 scikit-learn
 pyarrow
+streamlit
+databricks-sql-connector[pyarrow]
+python-dotenv
+plotly
